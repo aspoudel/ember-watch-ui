@@ -1,0 +1,30 @@
+<div id='listings'>
+  <div class='listing'>
+    <LinkTo @route='checkout' @model='1' {{on 'click' this.checkoutIdChange1}}>
+      <img class='watches' src='../assets/images/watch1.jpg' alt='' />
+    </LinkTo>
+    <p class='listing-p'>The Woodwork Block: A watch that is built using wood
+      that comes straight out of Alaska. Each wood plant is planted on the dawn
+      of a great meteor shower.
+    </p>
+  </div>
+  <div class='listing'>
+    <p class='listing-p'>Pearl De Chanel: A watch that compliments your everyday
+      causal looks. Built by the finest designers of La De Croix who get their
+      inspiration from the jewellry preference of the ancient Royal Groom.
+    </p>
+    <LinkTo @route='checkout' @model='2' {{on 'click' this.checkoutIdChange2}}>
+      <img class='watches' src='../assets/images/watch2.jpg' alt='' />
+    </LinkTo>
+  </div>
+  <div class='listing'>
+    <LinkTo @route='checkout' @model='3' {{on 'click' this.checkoutIdChange3}}>
+      <img class='watches' src='../assets/images/watch3.jpg' alt='' />
+    </LinkTo>
+    <p class='listing-p'>The Inscription of the eight Knight: The last Knight
+      who went down while fulfilling his duties on the dusk of the eight full 
+      moon left an inscription that turned the tide of the war.
+    </p>
+  </div>
+  <h1>{{@namee}}</h1>
+</div>

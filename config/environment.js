@@ -22,7 +22,9 @@ module.exports = function (environment) {
       // when it is created
     },
   };
-
+  ENV['contentSecurityPolicy'] = {
+    'default-src': '*',
+  };
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

@@ -1,0 +1,20 @@
+{{yield}}
+<div id="sidebar">
+    <div class="toggle-btn" {{on 'click' this.showMenu}}>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>    
+        {{#if this.username}}
+            <li>{{this.username}}</li>
+            <li class="login-logout" data-toggle="modal" data-target="#exampleModalCenter3">Logout</li>
+            <li class="login-logout" {{on "click" this.sessionCheck}}>Session Id</li>
+        {{else}}
+            <li>Username</li>
+            <li class="login-logout" data-toggle="modal" data-target="#exampleModalCenter">Login</li>
+            <li class="login-logout" data-toggle="modal" data-target="#exampleModalCenter2">Register</li>
+            <li class="login-logout" {{on "click" this.sessionCheck}}>Session Id</li>
+        {{/if}}   
+    </ul>
+</div>

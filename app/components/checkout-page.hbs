@@ -1,0 +1,18 @@
+<div id='checkoutPage'>
+  <hr />
+  {{#each @watches as |watch|}}
+    <h1>{{watch.name}}</h1>
+    <div id='checkoutPageListing'>
+      <img id='checkoutImg' src='{{watch.imgUrl}}' alt='' />
+      <div id="checkoutData">
+        <p class="detail-1">Quantity: 1</p>
+        <p class="detail-1">Complimentary Options:</p>
+        <button id="options" type="button">Woodwork Box</button>
+      </div>
+    </div>
+    <div id="checkoutCost">
+        <p>Cost(Inc. of all taxes): INR 69,899</p>
+        <button id="buyButton" type="button" {{on 'click' this.createCheckoutSession}}>Purchase</button>
+    </div>
+  {{/each}}
+</div>
